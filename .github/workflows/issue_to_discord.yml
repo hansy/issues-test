@@ -12,5 +12,5 @@ jobs:
       - name: Actions for Discord
         uses: Ilshidur/action-discord@0.3.2
         with:
-          args: "{{EVENT_PAYLOAD.issue.url}}"
+          args: "{{EVENT_PAYLOAD.issue.html_url}}"
             
