@@ -1,7 +1,7 @@
 name: Send issue to Discord
 env:
   DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-  DISCORD_EMBEDS: '[{"title":"${{EVENT_PAYLOAD.issue.title}}"}]'
+  DISCORD_EMBEDS: '[{"title":{{EVENT_PAYLOAD.issue.title}}}]'
 on:
   issues:
     types:
