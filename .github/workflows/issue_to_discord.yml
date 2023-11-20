@@ -1,4 +1,6 @@
 name: Send issue to Discord
+env:
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 on:
   issues:
     types:
