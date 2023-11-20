@@ -1,0 +1,12 @@
+name: Send issue to Discord
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  send_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Actions for Discord
+        uses: Ilshidur/action-discord@0.3.2
+            
